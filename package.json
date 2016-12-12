@@ -1,0 +1,17 @@
+{
+  "name": "graphql-validator-example",
+  "version": "1.0.0",
+  "description": "GraphQL Validator Example",
+  "main": "index.js",
+  "scripts": {
+    "test": "graphql-validator -s './schema/**/*.graphql' './queries/*.graphql'",
+    "example": "graphql-validator -s './example/schema/*.graphql' './example/queries/query.graphql'",
+    "invalid": "graphql-validator -s './example/schema/*.graphql' './example/queries/invalid.graphql'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@creditkarma/graphql-validator": "^0.2.0",
+    "graphql": "^0.8.2"
+  }
+}
